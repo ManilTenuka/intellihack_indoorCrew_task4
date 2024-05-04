@@ -17,4 +17,5 @@ def forecast_trends(model, X):
 
 if __name__ == "__main__":
     model = load_model('../models/trained_model.pkl')
-    X_future
+    X_future = pd.read_csv('../data/future_data.csv')  # Hypothetical future data
+    forecast_trends(model, X_future)
